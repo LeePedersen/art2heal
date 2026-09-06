@@ -5,3 +5,5 @@ artists: [art, contact]
 ---
 
 This is a bunch of art
+
+the artist email is thisthing@proton.com
