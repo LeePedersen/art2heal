@@ -1,8 +1,9 @@
 <header>
   <h1>{{ .Title }}</h1>
+
   <div>
     {{ if .IsHome }}
-      {{ $pages := slice (site.GetPage "categories") }}
+      {{ $pages := slice (site.GetPage "artists") }}
       {{ with site.GetPage "about" }}
         {{ $pages = $pages | append . }}
       {{ end }}
@@ -14,7 +15,7 @@
         {{ end }}
       </ul>
     {{ else }}
-      {{ $categories := .GetTerms "categories" }}
+      {{ $artists := .GetTerms "artists" }}
       <ul>
         <li>
           <a href="{{ site.Home.RelPermalink }}">{{ site.Home.LinkTitle }}</a>
@@ -27,10 +28,14 @@
           {{ end }}
         {{ end }}
 
-        {{ range $categories }}
+        {{ range $artists }}
           <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
         {{ end }}
       </ul>
     {{ end }}
+  </div>
+    <img id="headerImage" src="/galleries/g3/birds_on_wire_clean.jpeg" alt="something of ruby's" style="width:100%;height:400px;">
+  <div>
+    <p>here are a lot of words about the artwork and ruby and the purpose of this website</p>
   </div>
 </header>

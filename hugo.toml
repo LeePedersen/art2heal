@@ -4,7 +4,7 @@ baseURL = "https://example.com"
     name = "Bjørn Erik Pedersen"
 
 [taxonomies]
-    category = 'categories'
+    category = 'artists'
 
 [caches]
     [caches.images]
