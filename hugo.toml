@@ -8,7 +8,7 @@ baseURL = "https://example.com"
 
 [caches]
     [caches.images]
-        dir    = ':cacheDir/galleriesdeluxe'
+        dir    = ':cacheDir/images'
         maxAge = "4320h"                     # 6 months.
 
 [params]
